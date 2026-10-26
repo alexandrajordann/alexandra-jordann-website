@@ -1,0 +1,53 @@
+{
+ "items": [
+  {
+   "title": "Campaign name",
+   "brand": "Brand name",
+   "cat": "Beauty",
+   "thumb": "images/content/thumb-01.jpg",
+   "video": "videos/video-01.mp4",
+   "order": 1
+  },
+  {
+   "title": "Campaign name",
+   "brand": "Brand name",
+   "cat": "Fitness",
+   "thumb": "images/content/thumb-02.jpg",
+   "video": "videos/video-02.mp4",
+   "order": 2
+  },
+  {
+   "title": "Campaign name",
+   "brand": "Brand name",
+   "cat": "Lifestyle",
+   "thumb": "images/content/thumb-03.jpg",
+   "video": "videos/video-03.mp4",
+   "order": 3
+  },
+  {
+   "title": "Campaign name",
+   "brand": "Brand name",
+   "cat": "UGC",
+   "thumb": "images/content/thumb-04.jpg",
+   "video": "videos/video-04.mp4",
+   "order": 4
+  },
+  {
+   "title": "Campaign name",
+   "brand": "Brand name",
+   "cat": "Product",
+   "thumb": "images/content/thumb-05.jpg",
+   "url": "https://www.youtube.com/watch?v=XXXXXXXXXXX",
+   "instagram": "https://www.instagram.com/",
+   "order": 5
+  },
+  {
+   "title": "Campaign name",
+   "brand": "Brand name",
+   "cat": "Beauty",
+   "thumb": "images/content/thumb-06.jpg",
+   "video": "videos/video-06.mp4",
+   "order": 6
+  }
+ ]
+}

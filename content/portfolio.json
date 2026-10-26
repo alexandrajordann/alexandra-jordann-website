@@ -1,0 +1,88 @@
+{
+ "items": [
+  {
+   "file": "images/portfolio/01.jpg",
+   "cat": "beauty",
+   "shape": "p",
+   "alt": "Beauty portrait",
+   "order": 1
+  },
+  {
+   "file": "images/portfolio/02.jpg",
+   "cat": "fashion",
+   "shape": "s",
+   "alt": "Fashion editorial",
+   "order": 2
+  },
+  {
+   "file": "images/portfolio/03.jpg",
+   "cat": "fitness",
+   "shape": "l",
+   "alt": "Fitness campaign",
+   "order": 3
+  },
+  {
+   "file": "images/portfolio/04.jpg",
+   "cat": "lifestyle",
+   "shape": "p",
+   "alt": "Lifestyle photograph",
+   "order": 4
+  },
+  {
+   "file": "images/portfolio/05.jpg",
+   "cat": "commercial",
+   "shape": "s",
+   "alt": "Commercial campaign",
+   "order": 5
+  },
+  {
+   "file": "images/portfolio/06.jpg",
+   "cat": "fashion",
+   "shape": "l",
+   "alt": "Fashion editorial wide",
+   "order": 6
+  },
+  {
+   "file": "images/portfolio/07.jpg",
+   "cat": "beauty",
+   "shape": "s",
+   "alt": "Beauty close-up",
+   "order": 7
+  },
+  {
+   "file": "images/portfolio/08.jpg",
+   "cat": "lifestyle",
+   "shape": "p",
+   "alt": "Content creation",
+   "order": 8
+  },
+  {
+   "file": "images/portfolio/09.jpg",
+   "cat": "fitness",
+   "shape": "p",
+   "alt": "Activewear shoot",
+   "order": 9
+  },
+  {
+   "file": "images/portfolio/10.jpg",
+   "cat": "lifestyle",
+   "shape": "l",
+   "alt": "Lifestyle outdoors",
+   "order": 10
+  },
+  {
+   "file": "images/portfolio/11.jpg",
+   "cat": "commercial",
+   "shape": "p",
+   "alt": "Brand campaign",
+   "order": 11
+  },
+  {
+   "file": "images/portfolio/12.jpg",
+   "cat": "commercial",
+   "shape": "s",
+   "alt": "Social content",
+   "order": 12
+  }
+ ]
+}

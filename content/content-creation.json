@@ -1,0 +1,5 @@
+{"items":[
+ {"title":"Campaign name","brand":"Brand name","cat":"UGC","thumb":"images/content-creation/thumb-01.jpg","video":"videos/content/cc-01.mp4","order":1},
+ {"title":"Campaign name","brand":"Brand name","cat":"Beauty","thumb":"images/content-creation/thumb-02.jpg","video":"videos/content/cc-02.mp4","order":2},
+ {"title":"Campaign name","brand":"Brand name","cat":"Product","thumb":"images/content-creation/thumb-03.jpg","url":"https://www.youtube.com/watch?v=XXXXXXXXXXX","instagram":"https://www.instagram.com/","order":3}
+]}

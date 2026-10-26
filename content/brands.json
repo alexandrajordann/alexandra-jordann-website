@@ -1,0 +1,28 @@
+{
+ "items": [
+  {
+   "name": "Virgin Active",
+   "logo": "images/brands/virgin-active.svg",
+   "url": "",
+   "order": 1
+  },
+  {
+   "name": "H2 Coco",
+   "logo": "images/brands/h2-coco.svg",
+   "url": "",
+   "order": 2
+  },
+  {
+   "name": "DD Australia",
+   "logo": "images/brands/dd-australia.svg",
+   "url": "",
+   "order": 3
+  },
+  {
+   "name": "L’Oréal Paris",
+   "logo": "images/brands/loreal-paris.svg",
+   "url": "",
+   "order": 4
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "intro": "Current digitals and introductory tape, available on request for casting and bookings.",
+ "images": [
+  {
+   "file": "images/digitals/front.jpg",
+   "label": "Front"
+  },
+  {
+   "file": "images/digitals/profile.jpg",
+   "label": "Profile"
+  },
+  {
+   "file": "images/digitals/full-front.jpg",
+   "label": "Full Length — Front"
+  },
+  {
+   "file": "images/digitals/full-back.jpg",
+   "label": "Full Length — Back"
+  }
+ ],
+ "introVideo": {
+  "video": "videos/intro-tape.mp4",
+  "url": "",
+  "thumb": "images/digitals/intro-thumb.jpg"
+ },
+ "pdf": ""
+}

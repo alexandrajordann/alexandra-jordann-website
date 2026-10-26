@@ -1,0 +1,188 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Netlify Identity signs you in; Git Gateway lets the CMS save your changes to
+# GitHub for you, with no git knowledge needed.
+media_folder: "images/uploads"
+public_folder: "images/uploads"
+
+collections:
+  - name: "portfolio"
+    label: "Portfolio Photos"
+    files:
+      - name: "portfolio"
+        label: "Photos"
+        file: "content/portfolio.json"
+        fields:
+          - name: "items"
+            label: "Photo"
+            widget: "list"
+            summary: "{{fields.cat}} — {{fields.file}}"
+            fields:
+              - { name: "file", label: "Upload photo", widget: "image" }
+              - name: "cat"
+                label: "Category"
+                widget: "select"
+                options: ["beauty","fashion","fitness","commercial","lifestyle"]
+              - name: "shape"
+                label: "Shape"
+                widget: "select"
+                options: [{label: "Portrait (tall)", value: "p"}, {label: "Landscape (wide)", value: "l"}, {label: "Square", value: "s"}]
+                default: "p"
+              - { name: "client", label: "Client / brand (optional)", required: false }
+              - { name: "alt", label: "Alt text (optional)", required: false }
+              - { name: "all", label: "Show in the ALL tab", widget: "boolean", default: true }
+              - { name: "order", label: "Display order (lower = earlier)", widget: "number", default: 1 }
+
+  - name: "content"
+    label: "Content Videos"
+    files:
+      - name: "content"
+        label: "Videos"
+        file: "content/videos.json"
+        fields:
+          - name: "items"
+            label: "Video"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.brand}}"
+            fields:
+              - { name: "title", label: "Title" }
+              - { name: "brand", label: "Brand / client", required: false }
+              - { name: "cat", label: "Category label (e.g. Beauty, UGC)", required: false }
+              - { name: "thumb", label: "Thumbnail image", widget: "image" }
+              - { name: "video", label: "Upload a video file", widget: "file", required: false, media_folder: "/videos", public_folder: "/videos" }
+              - { name: "url", label: "OR a YouTube / Vimeo / other link", required: false }
+              - { name: "instagram", label: "Instagram link (optional)", required: false }
+              - { name: "order", label: "Display order (lower = earlier)", widget: "number", default: 1 }
+
+  - name: "about"
+    label: "About Page"
+    files:
+      - name: "about"
+        label: "About Content"
+        file: "content/about.json"
+        fields:
+          - { name: "label", label: "Small label above heading" }
+          - { name: "lead", label: "Intro line" }
+          - { name: "bio", label: "Biography paragraphs", widget: "list", field: { name: "paragraph", label: "Paragraph", widget: "text" } }
+          - { name: "image1", label: "About photo 1", widget: "image" }
+          - { name: "image1Alt", label: "Photo 1 alt text", required: false }
+          - { name: "image2", label: "About photo 2", widget: "image" }
+          - { name: "image2Alt", label: "Photo 2 alt text", required: false }
+
+  - name: "home"
+    label: "Home Page"
+    files:
+      - name: "home"
+        label: "Home Content"
+        file: "content/home.json"
+        fields:
+          - { name: "heroAlt", label: "Hero photo alt text" }
+          - { name: "introLead", label: "Intro paragraph" }
+
+  - name: "content-creation"
+    label: "Content Creation Page"
+    files:
+      - name: "content-creation"
+        label: "Content Creation Videos"
+        file: "content/content-creation.json"
+        fields:
+          - name: "items"
+            label: "Video"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.brand}}"
+            fields:
+              - { name: "title", label: "Title" }
+              - { name: "brand", label: "Brand / client", required: false }
+              - { name: "cat", label: "Category (e.g. UGC, Beauty, Product)", required: false }
+              - { name: "thumb", label: "Thumbnail image", widget: "image" }
+              - { name: "video", label: "Upload a video file", widget: "file", required: false, media_folder: "/videos/content", public_folder: "/videos/content" }
+              - { name: "url", label: "OR a YouTube / Vimeo / other link", required: false }
+              - { name: "instagram", label: "Instagram link (optional)", required: false }
+              - { name: "description", label: "Description (optional)", required: false, widget: "text" }
+              - { name: "order", label: "Display order (lower = earlier)", widget: "number", default: 1 }
+
+  - name: "campaigns"
+    label: "Video, Acting & Campaigns Page"
+    files:
+      - name: "campaigns"
+        label: "Campaign & Acting Clips"
+        file: "content/campaigns.json"
+        fields:
+          - name: "items"
+            label: "Project"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.brand}}"
+            fields:
+              - { name: "title", label: "Project / campaign title" }
+              - { name: "brand", label: "Brand or production company", required: false }
+              - { name: "role", label: "Type of work (e.g. TVC, Brand campaign)", required: false }
+              - { name: "thumb", label: "Poster / thumbnail", widget: "image" }
+              - { name: "video", label: "Upload a video file", widget: "file", required: false, media_folder: "/videos/campaigns", public_folder: "/videos/campaigns" }
+              - { name: "url", label: "OR a YouTube / Vimeo / other link", required: false }
+              - { name: "source", label: "Source link (optional)", required: false }
+              - { name: "description", label: "Description (optional)", required: false, widget: "text" }
+              - { name: "order", label: "Display order (lower = earlier)", widget: "number", default: 1 }
+
+  - name: "digitals"
+    label: "Digitals & Intro Video Page"
+    files:
+      - name: "digitals"
+        label: "Digitals Page"
+        file: "content/digitals.json"
+        fields:
+          - { name: "intro", label: "Short intro text", required: false, widget: "text" }
+          - name: "images"
+            label: "Digitals"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { name: "file", label: "Upload digital", widget: "image" }
+              - { name: "label", label: "Label (e.g. Front, Profile, Full Length — Back)", required: false }
+          - name: "introVideo"
+            label: "Introductory / self-tape video"
+            widget: "object"
+            fields:
+              - { name: "video", label: "Upload a video file", widget: "file", required: false, media_folder: "/videos", public_folder: "/videos" }
+              - { name: "url", label: "OR a YouTube / Vimeo link", required: false }
+              - { name: "thumb", label: "Poster image", widget: "image", required: false }
+          - { name: "pdf", label: "Downloadable digitals/portfolio PDF (optional)", widget: "file", required: false }
+
+  - name: "testimonials"
+    label: "Testimonials"
+    files:
+      - name: "testimonials"
+        label: "Kind Words"
+        file: "content/testimonials.json"
+        fields:
+          - name: "items"
+            label: "Testimonial"
+            widget: "list"
+            summary: "{{fields.brand}}"
+            fields:
+              - { name: "brand", label: "Brand / company name" }
+              - { name: "quote", label: "Testimonial text", widget: "text" }
+              - { name: "name", label: "Name of person quoted (optional)", required: false }
+              - { name: "role", label: "Their role/position (optional)", required: false }
+              - { name: "logo", label: "Brand logo (optional)", widget: "image", required: false }
+              - { name: "source", label: "Source link (optional)", required: false }
+              - { name: "project", label: "Project reference (optional)", required: false }
+              - { name: "order", label: "Display order (lower = earlier)", widget: "number", default: 1 }
+
+  - name: "brands"
+    label: "Brands"
+    files:
+      - name: "brands"
+        label: "Brands"
+        file: "content/brands.json"
+        fields:
+          - name: "items"
+            label: "Brand"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { name: "name", label: "Brand name" }
+              - { name: "logo", label: "Logo", widget: "image" }
+              - { name: "url", label: "Website link (optional)", required: false }
+              - { name: "order", label: "Display order (lower = earlier)", widget: "number", default: 1 }
